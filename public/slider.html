@@ -81,7 +81,7 @@ body {
   },
   loop: true,
   autoplay: {
-          delay: 900,
+          delay: 1000,
           disableOnInteraction: false,
         },
 });
