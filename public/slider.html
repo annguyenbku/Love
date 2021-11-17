@@ -11,17 +11,17 @@
 <body>
     <div class="swiper-container">
         <div class="swiper-wrapper">
-          <div class="swiper-slide"><img src="img/img1.jpeg" alt=""></div>
-          <div class="swiper-slide"><img src="img/img2.jpeg" alt=""></div>
-          <div class="swiper-slide"><img src="img/img3.jpeg" alt=""></div>
-          <div class="swiper-slide"><img src="img/img4.jpeg" alt=""></div>
-          <div class="swiper-slide"><img src="img/img5.jpeg" alt=""></div>
-          <div class="swiper-slide"><img src="img/img6.jpeg" alt=""></div>
-          <div class="swiper-slide"><img src="img/img7.jpeg" alt=""></div>
-          <div class="swiper-slide"><img src="img/img8.jpeg" alt=""></div>
-          <div class="swiper-slide"><img src="img/img9.jpeg" alt=""></div>
-          <div class="swiper-slide"><img src="img/img10.jpeg" alt=""></div>
-          <div class="swiper-slide"><img src="img/img11.jpeg" alt=""></div>
+          <div class="swiper-slide"><img src="https://drive.google.com/uc?id=1VevI0adGe8LHSfTyI9mbpQ3umNiL04Qd" alt=""></div>
+          <div class="swiper-slide"><img src="https://drive.google.com/uc?id=1AKi33nVEOVqarEqpc0UpCsW8531kkTau" alt=""></div>
+          <div class="swiper-slide"><img src="https://drive.google.com/uc?id=1-teLgl-qeJ9IZCKczr4-DkhnqwcQXHD_" alt=""></div>
+          <div class="swiper-slide"><img src="https://drive.google.com/uc?id=1EkZrh5Q2K-R8qCvfxb-40bam8uwbyLQ4" alt=""></div>
+          <div class="swiper-slide"><img src="https://drive.google.com/uc?id=1qlZZlPfz0YH4I_YwnyF5SLkjNlD2VMXh" alt=""></div>
+          <div class="swiper-slide"><img src="https://drive.google.com/uc?id=16DC2aJFeYj7Xfgap-ble0CdMijGX6uq0" alt=""></div>
+          <div class="swiper-slide"><img src="https://drive.google.com/uc?id=1J_pJO3s8UCOCLn8GsG-LYanp3UOcByDX" alt=""></div>
+          <div class="swiper-slide"><img src="https://drive.google.com/uc?id=19WxtMSKa-ohlrS6e-_8LgPdLZskms1HW" alt=""></div>
+          <div class="swiper-slide"><img src="https://drive.google.com/uc?id=1bIMqB_b3z6eIyFGi6P10J3re2dA9TvMM" alt=""></div>
+          <div class="swiper-slide"><img src="https://drive.google.com/uc?id=107NPvpxZYDY7tC9BQq0v4hYiSy7ZCtoo" alt=""></div>
+          <div class="swiper-slide"><img src="https://drive.google.com/uc?id=1riY4fyk_lVtI1IZIqYk9WHvG6w5FGjKv" alt=""></div>
         </div>
         <div class="swiper-pagination"></div>
       </div>
