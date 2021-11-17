@@ -39,7 +39,8 @@
    <div id="all">
      <button id="no" class="a" onclick="alert('Không cho cậu chọn đâu. Chọn Yes đi ^_^.')">No</button>
      <!-- Thay câu bạn muốn vào trong phần ngoặc đơn -->
-     <button class="b"><a href="https://m.me/100005578807121">Yes</a></button>
+     <button class="b"><a href="slider.html">Yes</a></button>
+     <!-- <a href="slider.html"></a> -->
      <!-- Thay id facebook của bạn vào trong ngoặc kép sau phần m.me/ -->
    </div>
  </div>
