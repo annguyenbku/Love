@@ -11,6 +11,7 @@
   <meta name="author" content="NGUYEN MINH CHU">
   <link rel="stylesheet" href="https://minhchuit.net/css/valentine.css" type="text/css">
   <link rel="stylesheet" href="https://minhchuit.net/css/fontawesome-free-5.12.1-web/css/all.css" type="text/css">
+  <link href = "https://i.pinimg.com/originals/35/f8/60/35f860e4685abab8f22ac5d0203f53f3.png" rel="shortcut icon" type="img/png" />
   <script language="javascript" src="https://minhchuit.net/js/jquery-3.3.1.min.js"></script>
   <script language="javascript" src="js/main.js"></script>
   <script>
