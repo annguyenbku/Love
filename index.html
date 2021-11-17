@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="vi">
+
+<head>
+  <meta charset="utf-8">
+  <title>Homepage</title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=11" />
+  <!-- Bootstrap CSS -->
+  <!-- <link rel="stylesheet" href="./css/bootstrap-4.3.1-dist/css/bootstrap.min.css" /> -->
+  <!-- Font Awesome 5.11.2 -->
+  <link rel="stylesheet" href="./fonts/fontawesome-free-5.11.2-web/css/all.css" />
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="css/OwlCarousel2-2.3.4/dist/assets/owl.carousel.css" type="text/css">
+  <link rel="stylesheet" href="css/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css" type="text/css">
+  <!-- CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+<!-- jQuery and JS bundle w/ Popper.js -->
+</head>
+
+<body>
+    <!-- Header -->
+    <header id="main-header">
+        <div class="header-top-bar">
+            <div class="container">
+                <div class="user">
+                    <a href="login.html">Đăng nhập</a>|
+                    <a href="register.html">Đăng ký</a>
+                </div>
+                <div class="cart">
+                    <a href=""><i class="fas fa-shopping-cart"></i> <span>Giỏ hàng</span></a>
+                </div>
+            </div>
+        </div>
+        <div class="header-bottom-bar">
+            <div class="container">
+                <div class="menu-icon">
+                    <span class="fas fa-bars"></span></div>
+                <div class="logo">
+                    <a href="./index.html"><img src="./img/logo_header.png" alt=""></a>
+                </div>
+                <div class="nav-items">
+                    <ul>
+                        <li class="active"><a href="index.html">Trang chủ</a></li>
+                        <li><a href="tour-category.html">Tour</a></li>
+
+                        <li><a href="contact.html">Liên hệ</a></li>
+                        <li><a href="profile.html">Trang cá nhân</a></li>
+                        <li class="dropdown">
+                            <!-- <a href="./admin.html">Bảng Điều Khiển</a> -->
+                            <a href="./admin/admin.html" class="dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Bảng Điều Khiển
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="./admin/manage-account.html">Quản Lý Tài Khoản</a>
+                                <hr>
+                                <a class="dropdown-item" href="./admin/manage-tour.html">Quản Lý Tour</a>
+                                <a class="dropdown-item" href="./admin/manage-location.html">Quản Lý Địa Điểm</a>
+                                <a class="dropdown-item" href="./admin/tour-register.html">Quản Lý Đăng Ký Tour</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="search-icon">
+                    <span class="fas fa-search"></span></div>
+                <div class="cancel-icon">
+                    <span class="fas fa-times"></span></div>
+                <form action="#">
+                    <input type="search" class="search-data" placeholder="Search" required>
+                    <button type="submit" class="fas fa-search"></button>
+                </form>
+            </div>
+        </div>
+    </header>
+    <!-- Banner Homepage -->
+    <div class="banner-imgs">
+        <div class="row">
+            <div class="col-12">
+                <div id="banner" class="carousel slide" data-ride="carousel">
+                    <ul class="carousel-indicators">
+                        <li data-target="#banner" data-slide-to="0" class="active"></li>
+                        <li data-target="#banner" data-slide-to="1"></li>
+                        <li data-target="#banner" data-slide-to="2"></li>
+                    </ul>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./img/ha-giang-banner.jpg.1758x854_q85_crop.png" alt="Ha Giang">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/banner-img-1.png" alt="Beach">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/banner-Son-Dong.png" alt="Son Dong">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#banner" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#banner" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Block Locations select -->
+    <section class="location-selected">
+        <div class="container">
+            <div class="location-selected-title">
+                <h2 id="block-title">Điểm đến yêu thích trong nước</h2>
+                <p>Lên rừng xuống biển. Trọn vẹn Việt Nam</p>
+            </div>
+            <div class="locations-block">
+                <div class="row">
+                    <div class="col-9">
+                        <div class="location-content" onclick="location.href='tour-category.html';" style="background-image: url(./img/location/location-phuquoc.jpg);">
+                            <div class="location-info">
+                                <p class="title">Phú Quốc</p>
+                                <p class="description"> 100 khách sạn</p>
+                            </div>
+                        </div>
+                        <div class="row location-block-space">
+                            <div class="col-6">
+                                <div class="location-content" onclick="location.href='tour-category.html';" style="background-image: url(./img/location/location-nhatrang.jpg);">
+                                    <div class="location-info">
+                                        <p class="title">Nha Trang</p>
+                                        <p class="description"> 100 khách sạn</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="location-content" onclick="location.href='tour-category.html';" style="background-image: url(./img/location/location-quynhon.jpg);">
+                                    <div class="location-info">
+                                        <p class="title">Quy Nhơn</p>
+                                        <p class="description"> 100 khách sạn</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="location-content location-long-height" onclick="location.href='tour-category.html';" style="background-image: url(./img/location/vungtau_2-370x395.jpg);">
+                            <div class="location-info">
+                                <p class="title">Vũng Tàu</p>
+                                <p class="description"> 100 khách sạn</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-3">
+                        <div class="location-content location-long-height" onclick="location.href='tour-category.html';" style="background-image: url(./img/location/danang_2-370x395.png);">
+                            <div class="location-info">
+                                <p class="title">Đà Nẵng</p>
+                                <p class="description"> 100 khách sạn</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-9">
+                        <div class="location-content" onclick="location.href='tour-category.html';" style="background-image: url(./img/location/location-phuquoc.jpg);">
+                            <div class="location-info">
+                                <p class="title">Phú Quốc</p>
+                                <p class="description"> 100 khách sạn</p>
+                            </div>
+                        </div>
+                        <div class="row location-block-space">
+                            <div class="col-6">
+                                <div class="location-content" onclick="location.href='tour-category.html';" style="background-image: url(./img/location/location-phanthiet.jpg);">
+                                    <div class="location-info">
+                                        <p class="title">Phan Thiết</p>
+                                        <p class="description"> 100 khách sạn</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="location-content" onclick="location.href='tour-category.html';" style="background-image: url(./img/location/location-sapa.jpeg);">
+                                    <div class="location-info">
+                                        <p class="title">Sapa</p>
+                                        <p class="description"> 100 khách sạn</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Cung Đường Tây Nguyên -->
+    <div class="Tay-Nguyen-route route-collection">
+        <div class="container">
+            <h4 class="route-title">CUNG ĐƯỜNG TÂY NGUYÊN</h4>
+            <div class="owl-carousel owl-theme route-content">
+                <div class="item a-tour">
+                    <a href="tour-detail.html">
+                        <img src="img/mang-den.jpg" alt="">
+                        <div class="local"><i class="fas fa-map-marker-alt "></i> Măng Đen</div>
+                        <div class="decript">
+                            <h5>Tour Kon Tum - KDL Măng Đen</h5>
+                            <span><i class="far fa-clock"> 2 ngày 1 đêm</i></span>
+                            <ul class="summary">
+                                <li>Nhà thờ gỗ Kon Tum</li>
+                                <li>Indochine Coffee</li>
+                                <li>KDL Măng Đen</li>
+                            </ul>
+                            <div class="price">2.480.000 VND</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="item a-tour">
+                    <a href="tour-detail.html">
+                        <img src="img/mang-den.jpg" alt="">
+                        <div class="local"><i class="fas fa-map-marker-alt "></i> Măng Đen</div>
+                        <div class="decript">
+                            <h5>Tour Nhà thờ Gỗ Kon Tum - KDL Măng Đen</h5>
+                            <span><i class="far fa-clock"> 2 ngày 1 đêm</i></span>
+                            <ul class="summary">
+                                <li>Nhà thờ gỗ Kon Tum</li>
+                                <li>Biển Hồ Pleiku</li>
+                            </ul>
+                            <div class="price">1.480.000 VND</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="item a-tour">
+                    <a href="tour-detail.html">
+                        <img src="img/mang-den.jpg" alt="">
+                        <div class="local"><i class="fas fa-map-marker-alt "></i> Măng Đen</div>
+                        <div class="decript">
+                            <h5>Tour Nhà thờ Gỗ Kon Tum - KDL Măng Đen</h5>
+                            <span><i class="far fa-clock"> 2 ngày 1 đêm</i></span>
+                            <ul class="summary">
+                                <li>Nhà thờ gỗ Kon Tum</li>
+                                <li>Biển Hồ Pleiku</li>
+                            </ul>
+                            <div class="price">1.480.000 VND</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="item a-tour">
+                    <a href="tour-detail.html">
+                        <img src="img/mang-den.jpg" alt="">
+                        <div class="local"><i class="fas fa-map-marker-alt "></i> Măng Đen</div>
+                        <div class="decript">
+                            <h5>Tour Nhà thờ Gỗ Kon Tum - KDL Măng Đen</h5>
+                            <span><i class="far fa-clock"> 2 ngày 1 đêm</i></span>
+                            <ul class="summary">
+                                <li>Nhà thờ gỗ Kon Tum</li>
+                                <li>Biển Hồ Pleiku</li>
+                            </ul>
+                            <div class="price">1.480.000 VND</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="item a-tour">
+                    <a href="tour-detail.html">
+                        <img src="img/mang-den.jpg" alt="">
+                        <div class="local"><i class="fas fa-map-marker-alt "></i> Măng Đen</div>
+                        <div class="decript">
+                            <h5>Tour Nhà thờ Gỗ Kon Tum - KDL Măng Đen</h5>
+                            <span><i class="far fa-clock"> 2 ngày 1 đêm</i></span>
+                            <ul class="summary">
+                                <li>Nhà thờ gỗ Kon Tum</li>
+                                <li>Biển Hồ Pleiku</li>
+                            </ul>
+                            <div class="price">1.480.000 VND</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="item a-tour">
+                    <a href="tour-detail.html">
+                        <img src="img/mang-den.jpg" alt="">
+                        <div class="local"><i class="fas fa-map-marker-alt "></i> Măng Đen</div>
+                        <div class="decript">
+                            <h5>Tour Nhà thờ Gỗ Kon Tum - KDL Măng Đen</h5>
+                            <span><i class="far fa-clock"> 2 ngày 1 đêm</i></span>
+                            <ul class="summary">
+                                <li>Nhà thờ gỗ Kon Tum</li>
+                                <li>Biển Hồ Pleiku</li>
+                            </ul>
+                            <div class="price">1.480.000 VND</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="item a-tour">
+                    <a href="tour-detail.html">
+                        <img src="img/mang-den.jpg" alt="">
+                        <div class="local"><i class="fas fa-map-marker-alt "></i> Măng Đen</div>
+                        <div class="decript">
+                            <h5>Tour Nhà thờ Gỗ Kon Tum - KDL Măng Đen</h5>
+                            <span><i class="far fa-clock"> 2 ngày 1 đêm</i></span>
+                            <ul class="summary">
+                                <li>Nhà thờ gỗ Kon Tum</li>
+                                <li>Biển Hồ Pleiku</li>
+                            </ul>
+                            <div class="price">1.480.000 VND</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="item a-tour">
+                    <a href="tour-detail.html">
+                        <img src="img/mang-den.jpg" alt="">
+                        <div class="local"><i class="fas fa-map-marker-alt "></i> Măng Đen</div>
+                        <div class="decript">
+                            <h5>Tour Nhà thờ Gỗ Kon Tum - KDL Măng Đen</h5>
+                            <span><i class="far fa-clock"> 2 ngày 1 đêm</i></span>
+                            <ul class="summary">
+                                <li>Nhà thờ gỗ Kon Tum</li>
+                                <li>Biển Hồ Pleiku</li>
+                            </ul>
+                            <div class="price">1.480.000 VND</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="item a-tour">
+                    <a href="tour-detail.html">
+                        <img src="img/mang-den.jpg" alt="">
+                        <div class="local"><i class="fas fa-map-marker-alt "></i> Măng Đen</div>
+                        <div class="decript">
+                            <h5>Tour Nhà thờ Gỗ Kon Tum - KDL Măng Đen</h5>
+                            <span><i class="far fa-clock"> 2 ngày 1 đêm</i></span>
+                            <ul class="summary">
+                                <li>Nhà thờ gỗ Kon Tum</li>
+                                <li>Biển Hồ Pleiku</li>
+                            </ul>
+                            <div class="price">1.480.000 VND</div>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Cung Đường Đông Nam Bộ -->
+    <div class="Dong-Nam-Bo-route route-collection">
+        <div class="container">
+            <h4 class="route-title">CUNG ĐƯỜNG ĐÔNG NAM BỘ</h4>
+            <div class="owl-carousel owl-theme route-content">
+                <div class="item a-tour">
+                    <a href="tour-detail.html">
+                        <img src="img/mang-den.jpg" alt="">
+                        <div class="local"><i class="fas fa-map-marker-alt "></i> Măng Đen</div>
+                        <div class="decript">
+                            <h5>Tour Nhà thờ Gỗ Kon Tum - KDL Măng Đen</h5>
+                            <span><i class="far fa-clock"> 2 ngày 1 đêm</i></span>
+                            <ul class="summary">
+                                <li>Nhà thờ gỗ Kon Tum</li>
+                                <li>Biển Hồ Pleiku</li>
+                            </ul>
+                            <div class="price">1.480.000 VND</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="item a-tour">
+                    <a href="tour-detail.html">
+                        <img src="img/mang-den.jpg" alt="">
+                        <div class="local"><i class="fas fa-map-marker-alt "></i> Măng Đen</div>
+                        <div class="decript">
+                            <h5>Tour Nhà thờ Gỗ Kon Tum - KDL Măng Đen</h5>
+                            <span><i class="far fa-clock"> 2 ngày 1 đêm</i></span>
+                            <ul class="summary">
+                                <li>Nhà thờ gỗ Kon Tum</li>
+                                <li>Biển Hồ Pleiku</li>
+                            </ul>
+                            <div class="price">1.480.000 VND</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="item a-tour">
+                    <a href="tour-detail.html">
+                        <img src="img/mang-den.jpg" alt="">
+                        <div class="local"><i class="fas fa-map-marker-alt "></i> Măng Đen</div>
+                        <div class="decript">
+                            <h5>Tour Nhà thờ Gỗ Kon Tum - KDL Măng Đen</h5>
+                            <span><i class="far fa-clock"> 2 ngày 1 đêm</i></span>
+                            <ul class="summary">
+                                <li>Nhà thờ gỗ Kon Tum</li>
+                                <li>Biển Hồ Pleiku</li>
+                            </ul>
+                            <div class="price">1.480.000 VND</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="item a-tour">
+                    <a href="tour-detail.html">
+                        <img src="img/mang-den.jpg" alt="">
+                        <div class="local"><i class="fas fa-map-marker-alt "></i> Măng Đen</div>
+                        <div class="decript">
+                            <h5>Tour Nhà thờ Gỗ Kon Tum - KDL Măng Đen</h5>
+                            <span><i class="far fa-clock"> 2 ngày 1 đêm</i></span>
+                            <ul class="summary">
+                                <li>Nhà thờ gỗ Kon Tum</li>
+                                <li>Biển Hồ Pleiku</li>
+                            </ul>
+                            <div class="price">1.480.000 VND</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="item a-tour">
+                    <a href="tour-detail.html">
+                        <img src="img/mang-den.jpg" alt="">
+                        <div class="local"><i class="fas fa-map-marker-alt "></i> Măng Đen</div>
+                        <div class="decript">
+                            <h5>Tour Nhà thờ Gỗ Kon Tum - KDL Măng Đen</h5>
+                            <span><i class="far fa-clock"> 2 ngày 1 đêm</i></span>
+                            <ul class="summary">
+                                <li>Nhà thờ gỗ Kon Tum</li>
+                                <li>Biển Hồ Pleiku</li>
+                            </ul>
+                            <div class="price">1.480.000 VND</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="item a-tour">
+                    <a href="tour-detail.html">
+                        <img src="img/mang-den.jpg" alt="">
+                        <div class="local"><i class="fas fa-map-marker-alt "></i> Măng Đen</div>
+                        <div class="decript">
+                            <h5>Tour Nhà thờ Gỗ Kon Tum - KDL Măng Đen</h5>
+                            <span><i class="far fa-clock"> 2 ngày 1 đêm</i></span>
+                            <ul class="summary">
+                                <li>Nhà thờ gỗ Kon Tum</li>
+                                <li>Biển Hồ Pleiku</li>
+                            </ul>
+                            <div class="price">1.480.000 VND</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="item a-tour">
+                    <a href="tour-detail.html">
+                        <img src="img/mang-den.jpg" alt="">
+                        <div class="local"><i class="fas fa-map-marker-alt "></i> Măng Đen</div>
+                        <div class="decript">
+                            <h5>Tour Nhà thờ Gỗ Kon Tum - KDL Măng Đen</h5>
+                            <span><i class="far fa-clock"> 2 ngày 1 đêm</i></span>
+                            <ul class="summary">
+                                <li>Nhà thờ gỗ Kon Tum</li>
+                                <li>Biển Hồ Pleiku</li>
+                            </ul>
+                            <div class="price">1.480.000 VND</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="item a-tour">
+                    <a href="tour-detail.html">
+                        <img src="img/mang-den.jpg" alt="">
+                        <div class="local"><i class="fas fa-map-marker-alt "></i> Măng Đen</div>
+                        <div class="decript">
+                            <h5>Tour Nhà thờ Gỗ Kon Tum - KDL Măng Đen</h5>
+                            <span><i class="far fa-clock"> 2 ngày 1 đêm</i></span>
+                            <ul class="summary">
+                                <li>Nhà thờ gỗ Kon Tum</li>
+                                <li>Biển Hồ Pleiku</li>
+                            </ul>
+                            <div class="price">1.480.000 VND</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="item a-tour">
+                    <a href="tour-detail.html">
+                        <img src="img/mang-den.jpg" alt="">
+                        <div class="local"><i class="fas fa-map-marker-alt "></i> Măng Đen</div>
+                        <div class="decript">
+                            <h5>Tour Nhà thờ Gỗ Kon Tum - KDL Măng Đen</h5>
+                            <span><i class="far fa-clock"> 2 ngày 1 đêm</i></span>
+                            <ul class="summary">
+                                <li>Nhà thờ gỗ Kon Tum</li>
+                                <li>Biển Hồ Pleiku</li>
+                            </ul>
+                            <div class="price">1.480.000 VND</div>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Cung Đường Bắc Trung Bộ -->
+    <div class="Bac-Trung-Bo-route route-collection">
+        <div class="container">
+            <h4 class="route-title">CUNG ĐƯỜNG BẮC TRUNG BỘ</h4>
+            <div class="owl-carousel owl-theme route-content">
+                <div class="item a-tour">
+                    <a href="tour-detail.html">
+                        <img src="img/mang-den.jpg" alt="">
+                        <div class="local"><i class="fas fa-map-marker-alt "></i> Măng Đen</div>
+                        <div class="decript">
+                            <h5>Tour Nhà thờ Gỗ Kon Tum - KDL Măng Đen</h5>
+                            <span><i class="far fa-clock"> 2 ngày 1 đêm</i></span>
+                            <ul class="summary">
+                                <li>Nhà thờ gỗ Kon Tum</li>
+                                <li>Biển Hồ Pleiku</li>
+                            </ul>
+                            <div class="price">1.480.000 VND</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="item a-tour">
+                    <a href="tour-detail.html">
+                        <img src="img/mang-den.jpg" alt="">
+                        <div class="local"><i class="fas fa-map-marker-alt "></i> Măng Đen</div>
+                        <div class="decript">
+                            <h5>Tour Nhà thờ Gỗ Kon Tum - KDL Măng Đen</h5>
+                            <span><i class="far fa-clock"> 2 ngày 1 đêm</i></span>
+                            <ul class="summary">
+                                <li>Nhà thờ gỗ Kon Tum</li>
+                                <li>Biển Hồ Pleiku</li>
+                            </ul>
+                            <div class="price">1.480.000 VND</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="item a-tour">
+                    <a href="tour-detail.html">
+                        <img src="img/mang-den.jpg" alt="">
+                        <div class="local"><i class="fas fa-map-marker-alt "></i> Măng Đen</div>
+                        <div class="decript">
+                            <h5>Tour Nhà thờ Gỗ Kon Tum - KDL Măng Đen</h5>
+                            <span><i class="far fa-clock"> 2 ngày 1 đêm</i></span>
+                            <ul class="summary">
+                                <li>Nhà thờ gỗ Kon Tum</li>
+                                <li>Biển Hồ Pleiku</li>
+                            </ul>
+                            <div class="price">1.480.000 VND</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="item a-tour">
+                    <a href="tour-detail.html">
+                        <img src="img/mang-den.jpg" alt="">
+                        <div class="local"><i class="fas fa-map-marker-alt "></i> Măng Đen</div>
+                        <div class="decript">
+                            <h5>Tour Nhà thờ Gỗ Kon Tum - KDL Măng Đen</h5>
+                            <span><i class="far fa-clock"> 2 ngày 1 đêm</i></span>
+                            <ul class="summary">
+                                <li>Nhà thờ gỗ Kon Tum</li>
+                                <li>Biển Hồ Pleiku</li>
+                            </ul>
+                            <div class="price">1.480.000 VND</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="item a-tour">
+                    <a href="tour-detail.html">
+                        <img src="img/mang-den.jpg" alt="">
+                        <div class="local"><i class="fas fa-map-marker-alt "></i> Măng Đen</div>
+                        <div class="decript">
+                            <h5>Tour Nhà thờ Gỗ Kon Tum - KDL Măng Đen</h5>
+                            <span><i class="far fa-clock"> 2 ngày 1 đêm</i></span>
+                            <ul class="summary">
+                                <li>Nhà thờ gỗ Kon Tum</li>
+                                <li>Biển Hồ Pleiku</li>
+                            </ul>
+                            <div class="price">1.480.000 VND</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="item a-tour">
+                    <a href="tour-detail.html">
+                        <img src="img/mang-den.jpg" alt="">
+                        <div class="local"><i class="fas fa-map-marker-alt "></i> Măng Đen</div>
+                        <div class="decript">
+                            <h5>Tour Nhà thờ Gỗ Kon Tum - KDL Măng Đen</h5>
+                            <span><i class="far fa-clock"> 2 ngày 1 đêm</i></span>
+                            <ul class="summary">
+                                <li>Nhà thờ gỗ Kon Tum</li>
+                                <li>Biển Hồ Pleiku</li>
+                            </ul>
+                            <div class="price">1.480.000 VND</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="item a-tour">
+                    <a href="tour-detail.html">
+                        <img src="img/mang-den.jpg" alt="">
+                        <div class="local"><i class="fas fa-map-marker-alt "></i> Măng Đen</div>
+                        <div class="decript">
+                            <h5>Tour Nhà thờ Gỗ Kon Tum - KDL Măng Đen</h5>
+                            <span><i class="far fa-clock"> 2 ngày 1 đêm</i></span>
+                            <ul class="summary">
+                                <li>Nhà thờ gỗ Kon Tum</li>
+                                <li>Biển Hồ Pleiku</li>
+                            </ul>
+                            <div class="price">1.480.000 VND</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="item a-tour">
+                    <a href="tour-detail.html">
+                        <img src="img/mang-den.jpg" alt="">
+                        <div class="local"><i class="fas fa-map-marker-alt "></i> Măng Đen</div>
+                        <div class="decript">
+                            <h5>Tour Nhà thờ Gỗ Kon Tum - KDL Măng Đen</h5>
+                            <span><i class="far fa-clock"> 2 ngày 1 đêm</i></span>
+                            <ul class="summary">
+                                <li>Nhà thờ gỗ Kon Tum</li>
+                                <li>Biển Hồ Pleiku</li>
+                            </ul>
+                            <div class="price">1.480.000 VND</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="item a-tour">
+                    <a href="tour-detail.html">
+                        <img src="img/mang-den.jpg" alt="">
+                        <div class="local"><i class="fas fa-map-marker-alt "></i> Măng Đen</div>
+                        <div class="decript">
+                            <h5>Tour Nhà thờ Gỗ Kon Tum - KDL Măng Đen</h5>
+                            <span><i class="far fa-clock"> 2 ngày 1 đêm</i></span>
+                            <ul class="summary">
+                                <li>Nhà thờ gỗ Kon Tum</li>
+                                <li>Biển Hồ Pleiku</li>
+                            </ul>
+                            <div class="price">1.480.000 VND</div>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Footer  -->
+    <footer id="main-footer">
+        <div class="footer-top-area">
+            <div class="row">
+                <div class="col-4">
+                    <hr class="light">
+                    <h5>ACK travel</h5>
+                    <hr class="light">
+                    <p>ACK travel là ứng dụng chuyên cung cấp các tour du lịch trong nước Bắc-Trung-Nam.</p>
+                </div>
+                <div class="col-4">
+                    <hr class="light">
+                    <h5>Khung giờ làm việc</h5>
+                    <hr class="light">
+                    <p>Thứ 2 - thứ 7: 8h30 đến 15h30</p>
+                </div>
+                <div class="col-4">
+                    <hr class="light">
+                    <h5>Liên hệ</h5>
+                    <hr class="light">
+                    <p>Đại học Bách Khoa - Cơ sở Dĩ An (khu ĐH Quốc Gia, Thủ Đức, TP.HCM)</p>
+                    <p>Nhà H6</p>
+                    Contact: <a href="tel:0792828297">079 282 8297</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <hr class="light-bottom">
+            <h5>
+                Bản quyền thuộc về ACK travel
+            </h5>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="css/bootstrap-4.3.1-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="css/OwlCarousel2-2.3.4/docs/assets/vendors/jquery.min.js"></script>
+    <script src="css/OwlCarousel2-2.3.4/dist/owl.carousel.js"></script>
+    <script src="./js/CarouselSlider.js"></script>
+    <script src="./js/header.js"></script>
+
+</body>
+
+</html>

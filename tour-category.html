@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./css/bootstrap-4.3.1-dist/css/bootstrap.min.css" />
+    <!-- Font Awesome 5.11.2 -->
+    <link rel="stylesheet" href="./fonts/fontawesome-free-5.11.2-web/css/all.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/tour.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="css/bootstrap-4.3.1-dist/js/bootstrap.bundle.min.js"></script>
+    <title>Tour Category</title>
+</head>
+
+<body>
+    <header id="main-header">
+        <div class="header-top-bar">
+            <div class="container">
+                <div class="user">
+                    <a href="login.html">Đăng nhập</a>|
+                    <a href="register.html">Đăng ký</a>
+                </div>
+                <div class="cart">
+                    <a href=""><i class="fas fa-shopping-cart"></i> <span>Giỏ hàng</span></a>
+                </div>
+            </div>
+        </div>
+        <div class="header-bottom-bar">
+            <div class="container">
+                <div class="menu-icon">
+                    <span class="fas fa-bars"></span></div>
+                <div class="logo">
+                    <a href="./index.html"><img src="./img/logo_header.png" alt=""></a>
+                </div>
+                <div class="nav-items">
+                    <ul>
+                        <li><a href="index.html">Trang chủ</a></li>
+                        <li class="active"><a href="tour-category.html">Tour</a></li>
+
+                        <li><a href="contact.html">Liên hệ</a></li>
+                        <li><a href="profile.html">Trang cá nhân</a></li>
+                        <li class="dropdown">
+                            <!-- <a href="./admin.html">Bảng Điều Khiển</a> -->
+                            <a href="./admin/admin.html" class="dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Bảng Điều Khiển
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="./admin/manage-account.html">Quản Lý Tài Khoản</a>
+                                <hr>
+                                <a class="dropdown-item" href="./admin/manage-tour.html">Quản Lý Tour</a>
+                                <a class="dropdown-item" href="./admin/manage-location.html">Quản Lý Địa Điểm</a>
+                                <a class="dropdown-item" href="./admin/tour-register.html">Quản Lý Đăng Ký Tour</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="search-icon">
+                    <span class="fas fa-search"></span></div>
+                <div class="cancel-icon">
+                    <span class="fas fa-times"></span></div>
+                <form action="#">
+                    <input type="search" class="search-data" placeholder="Search" required>
+                    <button type="submit" class="fas fa-search"></button>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="filter">
+            <ul>
+                <li class="a-filter">
+                    <a href="#">
+                        <img src="img/filter/taynguyen.png" alt="img">
+                        <div>Tây Nguyên đại ngàn</div>
+                    </a>
+                </li>
+                <li class="a-filter">
+                    <a href="#">
+                        <img src="img/filter/biendao.png" alt="img">
+                        <div>Biển xanh duyên hải</div>
+                    </a>
+                </li>
+                <li class="a-filter">
+                    <a href="#">
+                        <img src="img/filter/mientay.png" alt="img">
+                        <div>Miền Tây quê em</div>
+                    </a>
+                </li>
+                <li class="a-filter">
+                    <a href="#">
+                        <img src="img/filter/mientrung.png" alt="img">
+                        <div>Di sản miền Trung</div>
+                    </a>
+                </li>
+                <li class="a-filter">
+                    <a href="#">
+                        <img src="img/filter/biendao.png" alt="img">
+                        <div>Côn Đảo - Phú Quốc</div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="row">
+            <div class="a-tour">
+                <a href="tour-detail.html">
+                    <img src="img/mang-den.jpg" alt="img/mang-den.jpg">
+                    <div class="local"><i class="fas fa-map-marker-alt "></i> Măng Đen</div>
+                    <div class="decript">
+                        <h5>Tour Kon Tum - KDL Măng Đen</h5>
+                        <span><i class="far fa-clock"> 2 ngày 1 đêm</i></span>
+                        <ul class="summary">
+                            <li>Nhà thờ gỗ Kon Tum</li>
+                            <li>Indochine Coffee</li>
+                            <li>KDL Măng Đen</li>
+                        </ul>
+                        <div class="price">2.480.000 VND</div>
+                    </div>
+                </a>
+            </div>
+            <div class="a-tour">
+                <a href="tour-detail.html">
+                    <img src="img/tour/nhatrang-1.jpg" alt="img">
+                    <div class="local"><i class="fas fa-map-marker-alt "></i> Khánh Hòa</div>
+                    <div class="decript">
+                        <h5>Tour Nha Trang - Vinwonders</h5>
+                        <span><i class="far fa-clock"> 3 ngày 2 đêm</i></span>
+                        <ul class="summary">
+                            <li>Biển Nha Trang</li>
+                            <li>Làng chài Xưa Mũi Né </li>
+                            <li>Resort Vinwonders</li>
+                        </ul>
+                        <div class="price">3.190.000 VND</div>
+                    </div>
+                </a>
+            </div>
+            <div class="a-tour">
+                <a href="tour-detail.html">
+                    <img src="img/tour/hagiang.jpg" alt="img">
+                    <div class="local"><i class="fas fa-map-marker-alt "></i> Hà Giang</div>
+                    <div class="decript">
+                        <h5>Tour Hà Giang - Đồng Văn</h5>
+                        <span><i class="far fa-clock"> 4 ngày 3 đêm</i></span>
+                        <ul class="summary">
+                            <li>Hà Giang - Đồng Văn</li>
+                            <li>Mèo Vạc</li>
+                            <li>Thác Bản Giốc - KDT Pác Pó</li>
+                        </ul>
+                        <div class="price">5.600.000 VND</div>
+                    </div>
+                </a>
+            </div>
+            <div class="a-tour">
+                <a href="tour-detail.html">
+                    <img src="img/tour/nhatrang-2.jpg" alt="img">
+                    <div class="local"><i class="fas fa-map-marker-alt "></i> Khánh Hòa</div>
+                    <div class="decript">
+                        <h5>Tour Làng Chài Khánh Hòa</h5>
+                        <span><i class="far fa-clock"> 2 ngày 1 đêm</i></span>
+                        <ul class="summary">
+                            <li>Biển Khánh Hòa</li>
+                            <li>Làng Chài </li>
+                            <li>Khách sạn 4 sao</li>
+                        </ul>
+                        <div class="price">3.190.000 VND</div>
+                    </div>
+                </a>
+            </div>
+            <div class="a-tour">
+                <a href="tour-detail.html">
+                    <img src="img/tour/hue.jpg" alt="img">
+                    <div class="local"><i class="fas fa-map-marker-alt "></i> Huế</div>
+                    <div class="decript">
+                        <h5>Tour cố đô kinh thành Huế</h5>
+                        <span><i class="far fa-clock"> 1 ngày</i></span>
+                        <ul class="summary">
+                            <li>Cố đô Huế</li>
+                            <li>Lăng vua Khải Định</li>
+                            <li>Sông Hương</li>
+                        </ul>
+                        <div class="price">970.000 VND</div>
+                    </div>
+                </a>
+            </div>
+            <div class="a-tour">
+                <a href="tour-detail.html">
+                    <img src="img/tour/mientay.jpg" alt="img">
+                    <div class="local"><i class="fas fa-map-marker-alt "></i> Cà Mau</div>
+                    <div class="decript">
+                        <h5>Tour Cà Mau - chợ nổi miền Tây</h5>
+                        <span><i class="far fa-clock"> 2 ngày 1 đêm</i></span>
+                        <ul class="summary">
+                            <li>Chợ nổi Cái Răng</li>
+                            <li>Trại rắn Đồng Tâm</li>
+                            <li>Mũi Cà Mau</li>
+                        </ul>
+                        <div class="price">2.480.000 VND</div>
+                    </div>
+                </a>
+            </div>
+            <div class="a-tour">
+                <a href="tour-detail.html">
+                    <img src="img/mang-den.jpg" alt="img/mang-den.jpg">
+                    <div class="local"><i class="fas fa-map-marker-alt "></i> Măng Đen</div>
+                    <div class="decript">
+                        <h5>Tour Kon Tum - KDL Măng Đen</h5>
+                        <span><i class="far fa-clock"> 2 ngày 1 đêm</i></span>
+                        <ul class="summary">
+                            <li>Nhà thờ gỗ Kon Tum</li>
+                            <li>Indochine Coffee</li>
+                            <li>KDL Măng Đen</li>
+                        </ul>
+                        <div class="price">2.480.000 VND</div>
+                    </div>
+                </a>
+            </div>
+            <div class="a-tour">
+                <a href="tour-detail.html">
+                    <img src="img/tour/nhatrang-1.jpg" alt="img">
+                    <div class="local"><i class="fas fa-map-marker-alt "></i> Khánh Hòa</div>
+                    <div class="decript">
+                        <h5>Tour Nha Trang - Vinwonders</h5>
+                        <span><i class="far fa-clock"> 3 ngày 2 đêm</i></span>
+                        <ul class="summary">
+                            <li>Biển Nha Trang</li>
+                            <li>Làng chài Xưa Mũi Né </li>
+                            <li>Resort Vinwonders</li>
+                        </ul>
+                        <div class="price">3.190.000 VND</div>
+                    </div>
+                </a>
+            </div>
+            <div class="a-tour">
+                <a href="tour-detail.html">
+                    <img src="img/tour/hagiang.jpg" alt="img">
+                    <div class="local"><i class="fas fa-map-marker-alt "></i> Hà Giang</div>
+                    <div class="decript">
+                        <h5>Tour Hà Giang - Đồng Văn</h5>
+                        <span><i class="far fa-clock"> 4 ngày 3 đêm</i></span>
+                        <ul class="summary">
+                            <li>Hà Giang - Đồng Văn</li>
+                            <li>Mèo Vạc</li>
+                            <li>Thác Bản Giốc - KDT Pác Pó</li>
+                        </ul>
+                        <div class="price">5.600.000 VND</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="clear"></div>
+
+        <ul class="pagination">
+            <li class="page-item"><a class="page-link" href="#">Trước</a></li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">Sau</a></li>
+        </ul>
+
+        <div class="clear"></div>
+    </div>
+
+    <footer id="main-footer">
+        <div class="footer-top-area">
+            <div class="row">
+                <div class="col-4">
+                    <hr class="light">
+                    <h5>ACK travel</h5>
+                    <hr class="light">
+                    <p>ACK travel là ứng dụng chuyên cung cấp các tour du lịch trong nước Bắc-Trung-Nam.</p>
+                </div>
+                <div class="col-4">
+                    <hr class="light">
+                    <h5>Khung giờ làm việc</h5>
+                    <hr class="light">
+                    <p>Thứ 2 - thứ 7: 8h30 đến 15h30</p>
+                </div>
+                <div class="col-4">
+                    <hr class="light">
+                    <h5>Liên hệ</h5>
+                    <hr class="light">
+                    <p>Đại học Bách Khoa - Cơ sở Dĩ An (khu ĐH Quốc Gia, Thủ Đức, TP.HCM)</p>
+                    <p>Nhà H6</p>
+                    Contact: <a href="tel:0792828297">079 282 8297</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <hr class="light-bottom">
+            <h5>
+                Bản quyền thuộc về ACK travel
+            </h5>
+        </div>
+    </footer>
+
+    <script>
+        const menuBtn = document.querySelector(".menu-icon span");
+        const searchBtn = document.querySelector(".search-icon");
+        const cancelBtn = document.querySelector(".cancel-icon");
+        const items = document.querySelector(".nav-items");
+        const form = document.querySelector("form");
+        menuBtn.onclick = () => {
+            items.classList.add("active");
+            menuBtn.classList.add("hide");
+            searchBtn.classList.add("hide");
+            cancelBtn.classList.add("show");
+        }
+        cancelBtn.onclick = () => {
+            items.classList.remove("active");
+            menuBtn.classList.remove("hide");
+            searchBtn.classList.remove("hide");
+            cancelBtn.classList.remove("show");
+            form.classList.remove("active");
+            cancelBtn.style.color = "#ff3d00";
+        }
+        searchBtn.onclick = () => {
+            form.classList.add("active");
+            searchBtn.classList.add("hide");
+            cancelBtn.classList.add("show");
+        }
+    </script>
+
+</body>
+
+</html>
