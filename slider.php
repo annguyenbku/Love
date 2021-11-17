@@ -7,6 +7,7 @@
     <title>LOVE &hearts;</title>
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link href = "https://i.pinimg.com/originals/35/f8/60/35f860e4685abab8f22ac5d0203f53f3.png" rel="shortcut icon" type="img/png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
       * {
     margin: 0;
@@ -39,6 +40,11 @@ body {
     max-width: 500px !important;
     max-height: 500px !important;
   }
+  @media screen and (max-width: 800px) {
+    .swiper-slide img {
+    max-width: 300px !important;
+    
+}
     </style>
 </head>
 <body>
