@@ -4,9 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Touch Slider Using Html Css and Swiper.js|| 3d Responsive Slider 2|| Effect Coverflow|| update 2021</title>
+    <title>LOVE &hearts;</title>
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="slider.css">
+    <link href = "https://i.pinimg.com/originals/35/f8/60/35f860e4685abab8f22ac5d0203f53f3.png" rel="shortcut icon" type="img/png" />
+    <style>
+      * {
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #000;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color:#000;
+  }
+  .swiper-container {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 200px;
+  }
+  .swiper-slide {
+    background: #fff;
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, transparent, #0006);
+  }
+  .swiper-slide img {
+    max-width: 500px !important;
+    max-height: 500px !important;
+  }
+    </style>
 </head>
 <body>
     <div class="swiper-container">
